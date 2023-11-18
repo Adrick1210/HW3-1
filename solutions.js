@@ -59,10 +59,10 @@ console.log(trollsBegone("Can you bring me a can of soda?")); // prints 'cn y br
 
 // Declare an object of bankInfo
 let bankInfo = {
-    savings: 70,
-    checking: 193,
-    moneyMarket: 200,
-    creditCard: -1200,
+  savings: 70,
+  checking: 193,
+  moneyMarket: 200,
+  creditCard: -1200,
 };
 
 // declare a variable that stores the key values in one
@@ -70,9 +70,8 @@ let summary = 0;
 
 // define a function that creates a summary of all the key values added into one
 function bankAccountSummary() {
-  for(let balances in bankInfo) {
+  for (let balances in bankInfo) {
     summary += bankInfo[balances];
-    
   }
   return summary;
 }
@@ -88,4 +87,4 @@ function inTheRed() {
     return false;
   }
 }
- console.log(inTheRed());
+console.log(inTheRed());
