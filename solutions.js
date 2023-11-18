@@ -58,16 +58,34 @@ console.log(trollsBegone("Can you bring me a can of soda?")); // prints 'cn y br
 //=================================================
 
 // Declare an object of bankInfo
-const bankInfo = {
+let bankInfo = {
     savings: 70,
-    checking: -163,
+    checking: 193,
     moneyMarket: 200,
-    creditCard: -1200
+    creditCard: -1200,
 };
 
-console.log(bankInfo)
-console.log(bankInfo.savings);
-console.log(bankInfo.checking);
-console.log(bankInfo.moneyMarket);
-console.log(bankInfo.creditCard);
+// declare a variable that stores the key values in one
+let summary = 0;
 
+// define a function that creates a summary of all the key values added into one
+function bankAccountSummary() {
+  for(let balances in bankInfo) {
+    summary += bankInfo[balances];
+    
+  }
+  return summary;
+}
+
+// declare a variable that stores the sum of all the object values
+let bankTotal = bankAccountSummary(summary);
+
+// define a function that determines if the value of the bank info is less than zero
+function inTheRed() {
+  if (bankTotal < 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+ console.log(inTheRed())
