@@ -88,4 +88,4 @@ function inTheRed() {
     return false;
   }
 }
- console.log(inTheRed())
+ console.log(inTheRed());
