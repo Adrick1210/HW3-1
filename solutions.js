@@ -60,7 +60,7 @@ console.log(trollsBegone("Can you bring me a can of soda?")); // prints 'cn y br
 // Declare an object of bankInfo
 let bankInfo = {
   savings: 70,
-  checking: 193,
+  checking: -193,
   moneyMarket: 200,
   creditCard: -1200,
 };
@@ -88,3 +88,5 @@ function inTheRed() {
   }
 }
 console.log(inTheRed());
+
+// rest of homework in mad-libs directory
